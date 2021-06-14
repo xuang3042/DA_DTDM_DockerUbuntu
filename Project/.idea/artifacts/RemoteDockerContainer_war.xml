@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RemoteDockerContainer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>RemoteDockerContainer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="RemoteDockerContainer-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="RemoteDockerContainer:war exploded" />
+    </root>
+  </artifact>
+</component>

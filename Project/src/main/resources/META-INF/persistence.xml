@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="containerDb" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+<!--            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>-->
+<!--            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/container_db"/>-->
+<!--            <property name="hibernate.connection.user" value="root"/>-->
+<!--            <property name="hibernate.connection.password" value="0000"/>-->
+
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_0558e4234a0f396"/>
+            <property name="hibernate.connection.user" value="b3ca9a10132dd0"/>
+            <property name="hibernate.connection.password" value="67f84872"/>
+
+            <property name="hibernate.connection.useUnicode" value="true" />
+            <property name="hibernate.connection.characterEncoding" value="UTF-8"/>
+        </properties>
+    </persistence-unit>
+</persistence>
